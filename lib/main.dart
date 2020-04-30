@@ -1,13 +1,18 @@
 import 'package:demo1/less_group_page.dart';
+
 import 'package:demo1/plugin_use.dart';
 import 'package:demo1/statefull_group_page.dart';
 import 'package:flutter/material.dart';
 
 import 'copy_group_page.dart';
-import 'my_app_02.dart';
+import 'my_container.dart';
+import 'my_main2.dart';
+import 'my_main_practice.dart';
+import 'my_main.dart';
+import 'my_row.dart';
 
 
-void main() => runApp( MyApp2() );
+void main() => runApp( MyContainer() );
 
 class StateFullGroupState {
 }
