@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'copy_group_page.dart';
 import 'my_container.dart';
 import 'my_main2.dart';
-import 'my_main_practice.dart';
 import 'my_main.dart';
 import 'my_row.dart';
 
