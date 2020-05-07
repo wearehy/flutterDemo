@@ -11,7 +11,7 @@ import 'my_main.dart';
 import 'my_row.dart';
 
 
-void main() => runApp( MyContainer() );
+void main() => runApp( StateFullGroup() );
 
 class StateFullGroupState {
 }
