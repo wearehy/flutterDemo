@@ -1,4 +1,5 @@
 import 'package:demo1/less_group_page.dart';
+import 'package:demo1/page_val/list_index.dart';
 
 import 'package:demo1/plugin_use.dart';
 import 'package:demo1/statefull_group_page.dart';
@@ -11,7 +12,7 @@ import 'my_main.dart';
 import 'my_row.dart';
 
 
-void main() => runApp( StateFullGroup() );
+void main() => runApp( ListIndex() );
 
 class StateFullGroupState {
 }
