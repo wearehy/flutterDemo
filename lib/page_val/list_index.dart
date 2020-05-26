@@ -12,9 +12,6 @@ class _ListIndex extends State<ListIndex> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: '页面之间传参',
-      home: ListPlug(),
-    );
+    return  ListPlug();
   }
 }

@@ -1,4 +1,5 @@
-
+import 'package:demo1/my_main2.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -37,10 +38,18 @@ class _MyApp extends State {
               ],
             ),
           ),
-          new Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
+          IconButton(icon: Icon(Icons.star), color: Colors.red[500],onPressed: () => {
+//            MaterialPageRoute(builder: (context) => MyMain2())
+//            Navigator.push(context, new MaterialPageRoute(
+//              builder: (context) => MyMain2()
+//            ))
+            Navigator.push(context, new CupertinoPageRoute(
+              //MaterialPageRoute换成CupertinoPageRoute,
+              // MaterialPageRoute IOS左右、android上下,
+              // CupertinoPageRoute 都是左右
+              builder: (context) => MyMain2()
+            ))
+          }),
           new Text('41'),
         ],
       ),
@@ -98,7 +107,7 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
       ),
       home: new Scaffold(
         appBar: new AppBar(
-          title: new Text('mcl'),
+          title: new Text('官网页面案例'),
         ),
         body: new ListView(
           children: [    //进行组合，把前面写的合在一起

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class MyMain2 extends StatefulWidget {
+  MyMain2({Key key}) : super(key: key);
   @override
   _MyApp createState() => _MyApp();
 }
@@ -92,15 +93,10 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
       ),
     );
 
-
-    return new MaterialApp(//必须写在后面
-      title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new Scaffold(
+   //如果最外层为 MaterialApp，则appBar 失去 返回按钮
+   return new Scaffold(
         appBar: new AppBar(
-          title: new Text('mcl'),
+          title: new Text('官网页面案例+按钮'),
         ),
         body: new ListView(
           children: [    //进行组合，把前面写的合在一起
@@ -115,7 +111,7 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
             textSection,
           ],
         ),
-      ),
+
     );
   }
 }

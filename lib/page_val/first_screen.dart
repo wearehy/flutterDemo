@@ -1,5 +1,6 @@
 import 'package:demo1/page_val/list_plug.dart';
 import 'package:demo1/page_val/second_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 /*** 第一页 ****/
 class FirstScreen extends StatefulWidget {
@@ -24,9 +25,16 @@ class _FirstScreen extends State<FirstScreen> {
               return new ListTile(
                 title: Text(widget.setLists[index].title),
                 onTap: (){
-                  Navigator.push(context, new MaterialPageRoute(
+//                  Navigator.push(context, new MaterialPageRoute(
+//                      builder: (context) => new SecondScreen(myList: widget.setLists[index])
+//                  ));
+                  Navigator.push(context, new CupertinoPageRoute(
+                      //MaterialPageRoute换成CupertinoPageRoute,
+                      // MaterialPageRoute IOS左右、android上下,
+                      // CupertinoPageRoute 都是左右
                       builder: (context) => new SecondScreen(myList: widget.setLists[index])
                   ));
+
                 },
               );
             }
